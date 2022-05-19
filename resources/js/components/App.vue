@@ -3,11 +3,11 @@
         <header-bar></header-bar>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 pt-4">
+                <div class="col-lg-12 col-md-12 pt-4">
                     <album-list :albums="albums" @input="onSelected"></album-list>
                 </div>
 
-                <div class="col-lg-9">
+                <div class="col-lg-12">
                     <photo-list :filteredPhotos="filteredPhotos"></photo-list>
                 </div>
             </div>
@@ -75,7 +75,7 @@ export default {
 
         onSelected(value) {
             this.selected = value;
-        },
+        }
     }
 }
 </script>

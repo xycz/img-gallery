@@ -5,7 +5,7 @@
             <option v-for="album in albums" 
                     v-bind:value="album.id" 
                     :key="album.id">
-                {{ capitalizeFirstLetter(album.title) }}
+                {{ album.id }}: {{ capitalizeFirstLetter(album.title) }}
             </option>
         </select>
     </div>

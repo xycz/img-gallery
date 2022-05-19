@@ -28364,6 +28364,8 @@ var render = function () {
             [
               _vm._v(
                 "\n            " +
+                  _vm._s(album.id) +
+                  ": " +
                   _vm._s(_vm.capitalizeFirstLetter(album.title)) +
                   "\n        "
               ),
@@ -28407,7 +28409,7 @@ var render = function () {
         _c("div", { staticClass: "row" }, [
           _c(
             "div",
-            { staticClass: "col-lg-3 pt-4" },
+            { staticClass: "col-lg-12 col-md-12 pt-4" },
             [
               _c("album-list", {
                 attrs: { albums: _vm.albums },
@@ -28419,7 +28421,7 @@ var render = function () {
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "col-lg-9" },
+            { staticClass: "col-lg-12" },
             [
               _c("photo-list", {
                 attrs: { filteredPhotos: _vm.filteredPhotos },
